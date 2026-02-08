@@ -1,4 +1,4 @@
-﻿namespace AuttoTestSoftware.Support
+﻿namespace AuttoTestSoftware.WebApp.Support
 {
     public class Commons
     {

@@ -1,6 +1,6 @@
-﻿using AuttoTestSoftware.PageObjects.JustFlight;
+﻿using AuttoTestSoftware.WebApp.PageObjects.JustFlight;
 
-namespace AuttoTestSoftware.Core
+namespace AuttoTestSoftware.WebApp.Core
 {
     public class BaseTest
     {

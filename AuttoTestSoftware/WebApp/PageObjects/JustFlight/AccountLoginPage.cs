@@ -1,8 +1,8 @@
-﻿using AuttoTestSoftware.Support;
+﻿using AuttoTestSoftware.WebApp.Support;
 using Shouldly;
-using static AuttoTestSoftware.Support.Locators;
+using static AuttoTestSoftware.WebApp.Support.Locators;
 
-namespace AuttoTestSoftware.PageObjects.JustFlight
+namespace AuttoTestSoftware.WebApp.PageObjects.JustFlight
 {
     public class AccountLoginPage
     {

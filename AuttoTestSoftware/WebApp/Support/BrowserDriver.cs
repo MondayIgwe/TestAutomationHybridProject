@@ -1,8 +1,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using AuttoTestSoftware.Support;
 
-namespace AuttoTestSoftware.Support
+namespace AuttoTestSoftware.WebApp.Support
 {
     public static class BrowserDriver
     {
@@ -15,7 +14,7 @@ namespace AuttoTestSoftware.Support
             options.AddArgument("--no-sandbox");
             options.AddArgument("--disable-dev-shm-usage");
 
-            if (object.Equals(runMode, "headedless"))
+            if (Equals(runMode, "headedless"))
             {
                 options.AddArgument("--headless=new");
              

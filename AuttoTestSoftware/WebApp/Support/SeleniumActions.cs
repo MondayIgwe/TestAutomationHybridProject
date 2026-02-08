@@ -2,7 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System.Threading;
 
-namespace AuttoTestSoftware.Support
+namespace AuttoTestSoftware.WebApp.Support
 {
     public class SeleniumActions : ISelenuimActions
     {

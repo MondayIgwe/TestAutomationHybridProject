@@ -1,9 +1,6 @@
-using AuttoTestSoftware.Core;
-using AuttoTestSoftware.PageObjects.JustFlight;
-using Reqnroll;
-using System;
+using AuttoTestSoftware.WebApp.Core;
 
-namespace AuttoTestSoftware.StepDefinitions.JustFlight
+namespace AuttoTestSoftware.WebApp.StepDefinitions.JustFlight
 {
     [Binding]
     public class AccountLoginStepDefinitions : BaseTest

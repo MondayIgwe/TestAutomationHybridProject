@@ -11,7 +11,7 @@
 #region Designer generated code
 #pragma warning disable
 using Reqnroll;
-namespace AuttoTestSoftware.Features.JustFlightApp
+namespace AuttoTestSoftware.WebApp.Features.JustFlightApp
 {
     
     
@@ -27,7 +27,7 @@ namespace AuttoTestSoftware.Features.JustFlightApp
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features/JustFlightApp", "Account Login", "  Short description: verify account logon behavior for the JustFlight app", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "WebApp/Features/JustFlightApp", "Account Login", "  Short description: verify account logon behavior for the JustFlight app", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
 #line 1 "AccountLogin.feature"
 #line hidden
@@ -105,7 +105,7 @@ namespace AuttoTestSoftware.Features.JustFlightApp
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/JustFlightApp/AccountLogin.feature.ndjson", 7);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("WebApp/Features/JustFlightApp/AccountLogin.feature.ndjson", 7);
         }
         
         [global::NUnit.Framework.TestAttribute()]

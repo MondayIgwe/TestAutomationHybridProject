@@ -1,9 +1,9 @@
-﻿using AuttoTestSoftware.Support;
+﻿using AuttoTestSoftware.WebApp.Support;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 
-namespace AuttoTestSoftware.Hooks
+namespace AuttoTestSoftware.WebApp.Hooks
 {
     [Binding]
     public class TestHook
