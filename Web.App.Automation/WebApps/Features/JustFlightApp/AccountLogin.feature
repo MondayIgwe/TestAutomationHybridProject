@@ -1,5 +1,6 @@
-﻿Feature: Account Login
-  Short description: verify account logon behavior for the JustFlight app
+﻿Feature: Account Login Test
+  As a QA Engineer 
+  I want to verify account logon behavior for the JustFlight app
 
   @smoke @login
   Scenario: Successful login with valid credentials

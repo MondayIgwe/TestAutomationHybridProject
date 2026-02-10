@@ -11,25 +11,26 @@
 #region Designer generated code
 #pragma warning disable
 using Reqnroll;
-namespace AuttoTestSoftware.WebApp.Features.JustFlightApp
+namespace API.Services.Automation.Features
 {
     
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::NUnit.Framework.TestFixtureAttribute()]
-    [global::NUnit.Framework.DescriptionAttribute("Account Login")]
+    [global::NUnit.Framework.DescriptionAttribute("Create Book Order")]
     [global::NUnit.Framework.FixtureLifeCycleAttribute(global::NUnit.Framework.LifeCycle.InstancePerTestCase)]
-    public partial class AccountLoginFeature
+    public partial class CreateBookOrderFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "WebApp/Features/JustFlightApp", "Account Login", "  Short description: verify account logon behavior for the JustFlight app", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features", "Create Book Order", "  As a registered API client\r\n  I want to create and manage book orders\r\n  So tha" +
+                "t I can purchase books from the simple-books-api", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
-#line 1 "AccountLogin.feature"
+#line 1 "CreateOrder.feature"
 #line hidden
         
         [global::NUnit.Framework.OneTimeSetUpAttribute()]
@@ -105,80 +106,27 @@ namespace AuttoTestSoftware.WebApp.Features.JustFlightApp
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("WebApp/Features/JustFlightApp/AccountLogin.feature.ndjson", 7);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/CreateOrder.feature.ndjson", 3);
         }
         
         [global::NUnit.Framework.TestAttribute()]
-        [global::NUnit.Framework.DescriptionAttribute("Successful login with valid credentials")]
+        [global::NUnit.Framework.DescriptionAttribute("Successfully create a book order with valid data")]
         [global::NUnit.Framework.CategoryAttribute("smoke")]
-        [global::NUnit.Framework.CategoryAttribute("login")]
-        public async global::System.Threading.Tasks.Task SuccessfulLoginWithValidCredentials()
+        [global::NUnit.Framework.CategoryAttribute("positive")]
+        [global::NUnit.Framework.CategoryAttribute("order")]
+        public async global::System.Threading.Tasks.Task SuccessfullyCreateABookOrderWithValidData()
         {
             string[] tagsOfScenario = new string[] {
                     "smoke",
-                    "login"};
+                    "positive",
+                    "order"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "0";
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Successful login with valid credentials", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Successfully create a book order with valid data", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
             string[] tagsOfRule = ((string[])(null));
             global::Reqnroll.RuleInfo ruleInfo = null;
-#line 5
-  this.ScenarioInitialize(scenarioInfo, ruleInfo);
-#line hidden
-            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                await testRunner.SkipScenarioAsync();
-            }
-            else
-            {
-                await this.ScenarioStartAsync();
-#line 6
-    await testRunner.GivenAsync("I am on the account login page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
 #line 7
-    await testRunner.WhenAsync("I enter a valid email \"autotestsoftware@gmail.com\" and password \"P@ssw0rd\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 8
-    await testRunner.AndAsync("I submit the login form", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 9
-    await testRunner.ThenAsync("I should be logged in", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-#line 10
-    await testRunner.AndAsync("I should see my account dashboard", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-            }
-            await this.ScenarioCleanupAsync();
-        }
-        
-        [global::NUnit.Framework.TestAttribute()]
-        [global::NUnit.Framework.DescriptionAttribute("Login fails with invalid or missing credentials")]
-        [global::NUnit.Framework.CategoryAttribute("negative")]
-        [global::NUnit.Framework.CategoryAttribute("login")]
-        [global::NUnit.Framework.TestCaseAttribute("user@example.com", "wrongpass", "Invalid email or password", "1", null)]
-        [global::NUnit.Framework.TestCaseAttribute("wrong@example.com", "P@ssw0rd", "Invalid email or password", "2", null)]
-        [global::NUnit.Framework.TestCaseAttribute("", "P@ssw0rd", "Email is required", "3", null)]
-        [global::NUnit.Framework.TestCaseAttribute("user@example.com", "", "Password is required", "4", null)]
-        public async global::System.Threading.Tasks.Task LoginFailsWithInvalidOrMissingCredentials(string email, string password, string error, string @__pickleIndex, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "negative",
-                    "login"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
-            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("email", email);
-            argumentsOfScenario.Add("password", password);
-            argumentsOfScenario.Add("error", error);
-            string pickleIndex = @__pickleIndex;
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Login fails with invalid or missing credentials", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
-            string[] tagsOfRule = ((string[])(null));
-            global::Reqnroll.RuleInfo ruleInfo = null;
-#line 13
-  this.ScenarioInitialize(scenarioInfo, ruleInfo);
+this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -187,17 +135,32 @@ namespace AuttoTestSoftware.WebApp.Features.JustFlightApp
             else
             {
                 await this.ScenarioStartAsync();
+#line 8
+ await testRunner.GivenAsync("API endpoint is available \"/orders\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line hidden
+                global::Reqnroll.Table table1 = new global::Reqnroll.Table(new string[] {
+                            "Field",
+                            "Value"});
+                table1.AddRow(new string[] {
+                            "bookId",
+                            "1"});
+                table1.AddRow(new string[] {
+                            "customerName",
+                            "John Doe"});
+#line 9
+ await testRunner.AndAsync("I have the following book order details:", ((string)(null)), table1, "And ");
+#line hidden
+#line 13
+ await testRunner.WhenAsync("I submit a POST request to create the \"/orders\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
 #line 14
-    await testRunner.GivenAsync("I am on the account login page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+ await testRunner.ThenAsync("the response status code should be 201", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
 #line 15
-    await testRunner.WhenAsync(string.Format("I enter email \"{0}\" and password \"{1}\"", email, password), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.AndAsync("the response should contain an \"orderId\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 16
-    await testRunner.AndAsync("I submit the login form", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 17
-    await testRunner.ThenAsync(string.Format("I should see an error message \"{0}\"", error), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.AndAsync("the order should be created successfully", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

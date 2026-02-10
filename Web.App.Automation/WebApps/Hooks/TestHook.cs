@@ -34,7 +34,7 @@ namespace AuttoTestSoftware.WebApp.Hooks
                                 var outDir = TestContext.CurrentContext.WorkDirectory ?? AppContext.BaseDirectory;
                                 var fileName = $"screenshot_{SanitizeFileName(TestContext.CurrentContext.Test.Name)}_{DateTime.UtcNow:yyyyMMdd_HHmmss}.png";
                                 var full = Path.Combine(outDir, fileName);
-                                screenshot.SaveAsFile(full, ScreenshotImageFormat.Png);
+                                screenshot.SaveAsFile(full);
                                 TestContext.AddTestAttachment(full, "Screenshot on failure");
                             }
                         }
