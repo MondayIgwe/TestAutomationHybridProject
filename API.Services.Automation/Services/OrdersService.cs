@@ -2,6 +2,7 @@
 using API.Services.Automation.Models;
 using RestSharp;
 using System.Text.Json;
+using static Libraries.Automation.Utils.ReusableValues;
 
 namespace API.Services.Automation.Services
 {
@@ -12,7 +13,7 @@ namespace API.Services.Automation.Services
 
         public OrdersService(string authToken)
         {
-            _client = ApiClient.GetRestClientAsync()!;
+            _client = ApiClient.GetRestClientAsync(BaseApiUrl)!;
             _authToken = authToken;
         }
 

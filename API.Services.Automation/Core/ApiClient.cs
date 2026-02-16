@@ -8,9 +8,9 @@ namespace API.Services.Automation.Core
 {
     public static class ApiClient
     {
-        public static RestClient? GetRestClientAsync()
+        public static RestClient? GetRestClientAsync(string baseApiUrl)
         {
-            var options = new RestClientOptions(BaseApiUrl);
+            var options = new RestClientOptions(baseApiUrl);
             return new RestClient(options);
         }
 
@@ -40,7 +40,7 @@ namespace API.Services.Automation.Core
 
         public static async Task<string?> GetTokenAsync()
         {
-            var client = GetRestClientAsync();
+            var client = GetRestClientAsync(BaseApiUrl);
             var request = GetRestRequestAsync("/api-clients/", Method.Post);
             var response = await GetRestResponseAsync(client!, request!);
 

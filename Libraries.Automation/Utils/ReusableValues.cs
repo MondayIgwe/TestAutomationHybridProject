@@ -3,6 +3,7 @@
     public static class ReusableValues
     {
         public const string BaseApiUrl = "https://simple-books-api.click";
+        public const string OllamaBaseUrl = "http://127.0.0.1:11434";
         public const int RandomGenerator = 10;
         private static readonly Random _random = new();
 

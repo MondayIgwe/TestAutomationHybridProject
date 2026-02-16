@@ -24,4 +24,8 @@
     <ProjectReference Include="..\Libraries.Automation\Libraries.Automation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\AI-LLM\" />
+  </ItemGroup>
+
 </Project>
